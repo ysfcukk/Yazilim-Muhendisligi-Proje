@@ -70,5 +70,17 @@ namespace WindowsFormsApp1 {
                 this["fatura"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("DESKTOP-5KDA4RG\\SQLEXPRESS")]
+        public string server_name {
+            get {
+                return ((string)(this["server_name"]));
+            }
+            set {
+                this["server_name"] = value;
+            }
+        }
     }
 }

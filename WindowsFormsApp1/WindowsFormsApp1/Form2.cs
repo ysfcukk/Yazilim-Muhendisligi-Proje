@@ -41,7 +41,6 @@ namespace WindowsFormsApp1
             
             string number = textBox1.Text;
             number = number.Substring(1, number.Length-1);
-            MusteriBul(number);
 
             if (number.Length != 10)
             {
@@ -99,12 +98,12 @@ namespace WindowsFormsApp1
 
         private void Giris_Load(object sender, EventArgs e)
         {
-            con = new SqlConnection("Data Source=DESKTOP-5KDA4RG\\SQLEXPRESS;Initial Catalog=SelfServisKasa;Integrated Security=True");
+            string connection = "Data Source=" + Settings1.Default.server_name + ";Initial Catalog=SelfServisKasa;Integrated Security=True";
+            con = new SqlConnection(connection);
             Settings1.Default.musteri = "";
             Settings1.Default.isClick = false;
             Settings1.Default.toplamTutar = 0.0;
             Settings1.Default.fatura = "";
-
         }
     }
 }

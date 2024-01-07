@@ -14,5 +14,8 @@
     <Setting Name="fatura" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
+    <Setting Name="server_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DESKTOP-5KDA4RG\SQLEXPRESS</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

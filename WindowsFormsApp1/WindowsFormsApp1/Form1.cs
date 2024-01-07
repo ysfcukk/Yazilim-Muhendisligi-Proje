@@ -20,7 +20,8 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            con = new SqlConnection("Data Source=DESKTOP-5KDA4RG\\SQLEXPRESS;Initial Catalog=SelfServisKasa;Integrated Security=True");
+            string connection = "Data Source=" + Settings1.Default.server_name + ";Initial Catalog=SelfServisKasa;Integrated Security=True";//"Data Source="+ Settings1.Default.server_name + ";Initial Catalog=SelfServisKasa;Integrated Security=True"
+            con = new SqlConnection(connection);
             urun urun1 = new urun();
             urun1.BaslikYap();
             flowLayoutPanel1.Controls.Add(urun1);
